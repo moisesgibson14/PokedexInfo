@@ -8,7 +8,7 @@ interface Props {
 
 const Moves = ({moves}: Props) => {
   return (
-    <View style={styles.badgeContainer}>
+    <View style={styles.badgeContainer} testID="move-container">
       {moves.map(({move}) => (
         <View style={styles.item} key={move.name}>
           <Text style={styles.itemText}>{move.name}</Text>

@@ -12,10 +12,6 @@ interface Props {
 }
 
 const PokemonDetails = ({pokemon}: Props) => {
-  const getProgressNumber = (number: number): number => {
-    return parseInt(`0.${number}`);
-  };
-
   return (
     <ScrollView
       showsVerticalScrollIndicator={false}

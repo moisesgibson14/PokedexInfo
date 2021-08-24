@@ -37,6 +37,7 @@ const PokemonCard = ({pokemon}: Props) => {
 
   return (
     <TouchableOpacity
+      testID="select-pokemon"
       activeOpacity={0.9}
       onPress={() =>
         navigation.navigate('PokemonScreen', {

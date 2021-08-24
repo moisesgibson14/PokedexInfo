@@ -34,7 +34,9 @@ const Stats = ({stats}: Props) => {
     <View>
       {stats.map((s, i) => (
         <View key={s.stat.name}>
-          <Text style={{marginBottom: 10, fontSize: 16, fontWeight: 'bold'}}>
+          <Text
+            testID="title-stats"
+            style={{marginBottom: 10, fontSize: 16, fontWeight: 'bold'}}>
             {s.stat.name}
           </Text>
           <Animated.View
